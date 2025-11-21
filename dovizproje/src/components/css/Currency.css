@@ -1,0 +1,111 @@
+/* Arka plan */
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ana kutu */
+.currency-div {
+  display: flex;
+  flex-direction: column; /* ALT ALTA DİZMEK İÇİN COLUMN YAZILIR */
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 320px;
+  margin: 100px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sayı giriş alanı */
+.amount,
+.result {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.amount:focus,
+.result:focus {
+  border-color: #00c3ff;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Para birimi seçim kutuları */
+.from-currency-option,
+.to-currency-option {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  text-align: center;
+  outline: none;
+  transition: 0.3s ease;
+  appearance: none;
+  cursor: pointer;
+}
+
+.from-currency-option:hover,
+.to-currency-option:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+option {
+  color: #000;
+}
+
+/* Responsive (mobil uyumlu) */
+@media (max-width: 480px) {
+  .currency-div {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .amount,
+  .result,
+  .from-currency-option,
+  .to-currency-option {
+    font-size: 14px;
+  }
+}
+
+.swap-btn {
+  background: none;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  margin: 10px 0;
+  color: #fff;
+}
+.swap-btn:hover {
+  color: #00c3ff;
+}
+
+/* Başlık stili */
+.currency-title {
+  color: #fff; /* beyaz yazı */
+  font-family: 'Poppins', sans-serif; /* modern, sade font */
+  font-weight: 600; /* biraz kalın */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* okunabilirliği artırır */
+}

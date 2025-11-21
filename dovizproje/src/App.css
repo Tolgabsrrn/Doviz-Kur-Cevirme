@@ -1,0 +1,11 @@
+/* arka plan resmi oluşturduk */
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(images/depositphotos_259789872-stock-photo-business-finance-background-display-currency.jpg); /* resmi çağırdık */
+  background-repeat: no-repeat; /* resmi tekrarlamasın */
+  background-size: cover;
+  background-position: center;
+
+}
